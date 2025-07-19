@@ -2,7 +2,7 @@ import math
 from scipy import stats
 import openpyxl
 
-doc = 'benfordTests_copy.xlsx'
+doc = 'benfordTests.xlsx'
 wb = openpyxl.load_workbook(doc)
 sheet = wb['sheetname']
 
@@ -24,7 +24,7 @@ for i in range(row, sheet.max_row):
     sheet['q'+str(row)].value = float(r)
     sheet['r'+str(row)].value = float(p)
     sheet['s'+str(row)].value = float(std_err)
-    wb.save('benfordTests_second_copy.xlsx')
+    wb.save('benfordTests_copy.xlsx')
     row +=1
 
 wb.close()
