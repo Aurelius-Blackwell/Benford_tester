@@ -1,7 +1,7 @@
 import os
 
-source_folder = 'F:/2023_10K_files/'
-destination_folder = 'F:/2023_10K_files_np/'
+source_folder = 'F:/YOUR SOURCE FOLDER HERE/'
+destination_folder = 'F:/YOUR TARGET FOLDER HERE/'
 
 p = os.listdir(source_folder)
 
