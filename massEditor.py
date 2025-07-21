@@ -1,7 +1,7 @@
 import os
 
-source_folder = 'F:/YOUR SOURCE FOLDER HERE/'
-destination_folder = 'F:/YOUR TARGET FOLDER HERE/'
+source_folder = 'C:/YOUR SOURCE FOLDER HERE/'
+destination_folder = 'C:/YOUR TARGET FOLDER HERE/'
 
 p = os.listdir(source_folder)
 
