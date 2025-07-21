@@ -1,2 +1,2 @@
 # Benford_tester
-Tests whether a sample of files adheres to Benford's Law.
+This collection of programs can be used to test whether a group of files (placed together in a folder) adhere to Benford's Law. It can be used to identify an outlier among the files, i.e. to demonstrate that the file does not follow a numerical distribution from natural exponential processes. To prevent periods or commas causing a simple regex to read one number as multiple numbers, the massEditor program first removes all periods and commas from the data.
