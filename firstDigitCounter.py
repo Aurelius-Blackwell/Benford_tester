@@ -4,7 +4,7 @@ import re
 import os
 
 # The percentage frequency of first digits will be written to this Excel template
-doc = 'benfordTests.xlsx'
+doc = 'benfordTests_template.xlsx'
 wb = openpyxl.load_workbook(doc)
 sheet = wb['sheetname']
 
@@ -41,7 +41,7 @@ for file in p:
         sheet[get_column_letter(i+3)+str(row)].value = totals[i]    #+3 to start at column C
     # Calculate totals in L-column to check that distribution totals 100%
     sheet['l'+str(row)] = '=sum(c'+str(row)+':k'+str(row)+')'
-    wb.save('benfordTests_copy.xlsx')
+    wb.save('benfordTests.xlsx')
     # Write next file's distribution onto new row
     row +=1
 
