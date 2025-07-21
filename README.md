@@ -1,5 +1,5 @@
 # Benford_tester
 This collection of programs can be used to test whether a group of files (placed together in a folder) adhere to Benford's Law. It can be used to identify an outlier among the files, i.e. to demonstrate that the file does not follow a numerical distribution from natural exponential processes.
 To prevent periods or commas causing a simple regex to read one number as multiple numbers, the massEditor program first removes all periods and commas from the data.
-The firstDigitCounter program can then read from the transformed data and lists the percentage frequency of each digit as a first digit within each file. These are saved to the benford_tests_template.xlsx file in the current working directory.
-Finally, the benfordTest program performs a simple regression and adds the stats for each file to 
+The firstDigitCounter program can then read from the transformed data and lists the percentage frequency of each digit as a first digit from each file. These are saved to the benfordTests_template.xlsx, a copy of which is in this repo. (Output is saved as benfordTests.xlsx.)
+Finally, the benfordTest program performs a simple regression and adds the stats for each file to the benfordTests.xlsx file. The data in the Excel file could be transformed to be more suitable to a linear regression, but due to the small sample size and flattening of the curve, data which deviates from Benford's Law on 1 or 2 digits will generally still show a p-value of less than 0.05.
