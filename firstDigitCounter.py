@@ -8,8 +8,11 @@ doc = 'benfordTests_template.xlsx'
 wb = openpyxl.load_workbook(doc)
 sheet = wb['sheetname']
 
+# Folder of files to be analyzed
+folder = 'C:/your_folder_here/'
+
 # Place folder of files whose contents will be read
-p = os.listdir('C:/your_folder_here/')
+p = os.listdir(folder)
 
 # Start at row for to leave some commenting space in the Excel template
 row = 4
@@ -22,7 +25,7 @@ for file in p:
     print('Working on ' + name)
 
     # Open and read file
-    f = open('F:/2023_10K_files_np/'+file, 'r', encoding='utf-8')
+    f = open(folder+file, 'r', encoding='utf-8')
     text = f.read()
 
     # List all indepedent collect of digits
